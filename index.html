@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha Biblioteca de Jogos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header class="header">
+    <h1>Biblioteca de Jogos</h1>
+    <button class="btn-perfil" id="editar-perfil">Editar Perfil</button>
+  </header>
+
+  <!-- Perfil -->
+  <section class="perfil">
+    <div class="perfil-container">
+      <div class="foto-e-nome">
+        <img src="perfil.jpg" alt="Foto de Perfil" class="foto-perfil" id="foto-perfil">
+        <div>
+          <h2 id="nome-perfil">Seu Nome</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Biblioteca de Jogos -->
+  <section class="biblioteca">
+    <h2>Meus Jogos</h2>
+    <div id="jogos-lista" class="jogos-lista"></div>
+  </section>
+
+  <!-- Formulário para adicionar jogos -->
+  <section class="adicionar-jogo">
+    <h3>Adicionar Novo Jogo</h3>
+    <form id="form-jogo">
+      <input type="text" id="nome-jogo" placeholder="Nome do Jogo" required>
+      <input type="file" id="arquivo-jogo" accept=".exe" required>
+      <button type="submit">Adicionar Jogo</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
